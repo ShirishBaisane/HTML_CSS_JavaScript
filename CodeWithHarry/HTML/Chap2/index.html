@@ -7,6 +7,7 @@
     <title>Chapter2</title>
 </head>
 <body>
+    <!-- Headinds and paragraph tags -->
     <h1>Books to read</h1>
     <h2>Books to read</h2>
     <h3>Books to read</h3>
@@ -15,8 +16,67 @@
     <h6>Books to read</h6>
     <p>There now almost infinite number of books to read in the world.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eligendi blanditiis corrupti perferendis facere, molestiae alias officiis. Quasi, et, modi autem animi qui nostrum incidunt a quae fugit quas quia?</p>
-    
+    <hr>
+    <!-- Example of absolute link -->
     <a href="https://google.com">Let's go to Google</a>
+    <!-- Example of relative link -->
     <a href="about.html">About</a>
+    <hr>
+
+    <!-- Image tag example -->
+    <img src="https://everesthill.com/wp-content/uploads/2018/01/PUBG-Burning-Man-Photo-Wallpaper.jpg" alt="PUBG image" width="200px">
+    <img src="image.JPG" alt="" height="200px">
+    <hr>
+
+    <!-- bold italic underline tags -->
+    <br><b>This is       bold</b><br>
+    <i>This  is    italic</i><br>
+    <u>This      is underline</u>
+    <!-- br tag -->
+    <br>
+
+    <!-- big and small tags -->
+    <big>This is big</big> <br>
+    <Small>This is small</Small>
+    <hr>
+
+    <!-- Subscript and Superscript tags -->
+    <p>CO<sub>2</sub></p>
+    <p>ax<sup>2</sup>+bx<sup>1</sup>+cx<sup>0</sup></p>
+    <hr>
+
+    <!-- pre tag -->
+    <pre>
+        package main;
+
+        import java.util.Scanner;
+
+        public class maccess {
+
+            public static void main(String[] args) {
+                System.out.println("===Calculate Average of N numbers====");
+                Scanner scan = new Scanner(System.in);
+                int num=1, count=0, sum=0;
+                
+                while(num!=0) {
+                    System.out.println("Enter number or press '0' to quit/exit");
+                    num = scan.nextInt();
+                    if(num==0) {
+                        break;
+                    }
+                    sum = sum+num;
+                    count++;
+                }//end of loop
+                double avg = ((double)sum/(double)count);
+                System.out.println("Average: "+avg);//required output
+                scan.close();
+
+            }
+
+        }   
+    </pre>
+
+
+
 </body>
 </html>
