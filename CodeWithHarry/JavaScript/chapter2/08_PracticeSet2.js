@@ -6,6 +6,8 @@ let a = prompt("What is your age?");
 a = Number.parseInt(a);
 if(a>=10 && a<=20){
     console.log("The age lies in the range 10 to 20.")
+} else {
+    console.log("The age does not lies in the range 10 to 20.")
 }
 */
 /*
@@ -52,7 +54,8 @@ if(d%2==0 || d%3==0){
 }
 */
 
-//Practice Set 2 - Q4
+//Practice Set 2 - Q5
 let age = prompt("What is your age?");
+console.log(typeof age)
 age = Number.parseInt(age);
 console.log("You",(age>=18) ? "can Drive!!!" : "cannot drive....")
