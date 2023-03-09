@@ -10,3 +10,5 @@ function linearSearch(arr, target){
 console.log(linearSearch([-5,2,10,4,6], 10));
 console.log(linearSearch([-5,2,10,4,6], 6));
 console.log(linearSearch([-5,2,10,4,6], 20));
+
+// Big-O: O(n) -> Linear
