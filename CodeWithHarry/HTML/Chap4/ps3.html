@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set - 3</title>
+</head>
+
+<body>
+    <div>
+        <form action="form.java">
+            <h1>Travel, book a Vacation!!!!</h1>
+            <label for="onewayTop">
+                <input type="radio" name="trip" value="One Way" id="onewayTop"> One Way
+            </label>
+            <label for="roundtripTop">
+                <input type="radio" name="trip" value="Round trip" id="roundtripTop"> Round trip
+            </label>
+            <label for="multi-city-Top">
+                <input type="radio" name="trip" value="Multi-City" id="multi-city-Top"> Multi-City
+            </label>
+            <br>
+            <select name="StartCity" id="startCity">
+                <option value="default">Start-City</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+                <option value="Nashik">Nashik</option>
+            </select>
+            <select name="EndCity" id="endCity">
+                <option value="default">End-City</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+                <option value="Nashik">Nashik</option>
+            </select>
+            <br>
+            <label for="departureID"> Departure Date
+                <input type="date" name="departure" id="departureID">
+            </label>
+            <label for="arrivalID"> Arrival Date
+                <input type="date" name="arrival" id="arrivalID">
+            </label>
+            <br>
+            <label for="">
+                <input type="button" value="submit">
+            </label>
+
+
+
+        </form>
+    </div>
+</body>
+
+</html>
