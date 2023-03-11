@@ -1,0 +1,20 @@
+const arr = [1,2,3,"Shirish"]
+console.log(arr[0])
+
+arr.push(4)
+console.log(arr)
+
+arr.unshift(8)
+console.log(arr)
+
+for(let items of arr){
+    console.log(items/2)
+}
+
+arr.pop()
+console.log(arr)
+
+arr.shift()
+console.log(arr)
+
+//some other methods: map, filter, reduce, slice and splice
