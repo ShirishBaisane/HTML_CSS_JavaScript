@@ -1,6 +1,6 @@
 // 1. Write a JavaScript program that accept two integers and display the larger.
 
-// const prompt = require("prompt-sync")()
+const prompt = require("prompt-sync")()
 
 // let int1 = prompt("Enter value 1: ")
 // let int2 = prompt("Enter value 2: ")
@@ -16,10 +16,39 @@ Sample Output :
 "2 is even"
  */
 
-for(let i=0; i<=15; i++){
-    if(i%2==0){
-        console.log(`"${i} is even"`)
-    } else {
-        console.log(`"${i} is odd"`)
+// for(let i=0; i<=15; i++){
+//     if(i%2==0){
+//         console.log(`"${i} is even"`)
+//     } else {
+//         console.log(`"${i} is odd"`)
+//     }
+// }
+
+
+/**
+ * 12. Write a JavaScript program to sum the multiples of 3 and 5 under 1000.
+ */
+// let sum=0;
+// for(let i=1; i<1000; i++){
+//     if(i%3==0 | i%5==0){
+//         sum += i;
+//     }
+// }
+// console.log("Sum: ",sum)
+
+
+/**
+ * 11. Write a JavaScript program to compute the greatest common divisor (GCD) of two positive integers.
+ */
+
+let int1 = prompt("Enter value 1: ")
+let int2 = prompt("Enter value 2: ")
+let gcd = 1
+let smallest 
+int1<int2 ? smallest = int1 : smallest=int2;
+for(let i=1; i<=smallest; i++){
+    if(int1%i==0 && int2%i==0){
+        gcd = i;
     }
 }
+console.log("GCD: ", gcd)
