@@ -41,14 +41,32 @@ Sample Output :
  * 11. Write a JavaScript program to compute the greatest common divisor (GCD) of two positive integers.
  */
 
-let int1 = prompt("Enter value 1: ")
-let int2 = prompt("Enter value 2: ")
-let gcd = 1
-let smallest 
-int1<int2 ? smallest = int1 : smallest=int2;
-for(let i=1; i<=smallest; i++){
-    if(int1%i==0 && int2%i==0){
-        gcd = i;
+// let int1 = prompt("Enter value 1: ")
+// let int2 = prompt("Enter value 2: ")
+// let gcd = 1
+// let smallest 
+// int1<int2 ? smallest = int1 : smallest=int2;
+// for(let i=1; i<=smallest; i++){
+//     if(int1%i==0 && int2%i==0){
+//         gcd = i;
+//     }
+// }
+// console.log("GCD: ", gcd)
+
+/**
+ * 10. Write a JavaScript program to construct the following pattern, using a nested for loop. Go to the editor
+
+*  
+* *  
+* * *  
+* * * *  
+* * * * *  
+
+ */
+for(let i=1; i<6; i++){
+    for(let j=0; j<i; j++){
+        console.log("*\t")
     }
+    console.log("\n")
+
 }
-console.log("GCD: ", gcd)
