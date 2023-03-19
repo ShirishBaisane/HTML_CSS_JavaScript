@@ -63,10 +63,59 @@ Sample Output :
 * * * * *  
 
  */
+// 1.Right Triangle pattern
+let string = "";
 for(let i=1; i<6; i++){
-    for(let j=0; j<i; j++){
-        console.log("*\t")
-    }
-    console.log("\n")
-
+  for(let j=0; j<i; j++){
+    string += "*"
+  }
+  string += "\n"
+  
 }
+console.log(string)
+
+// 2.Hollow square pattern
+n = 5
+let str2 = "";
+for(let i=0; i<n; i++){
+  for(let j=0; j<n; j++){
+    if(i==0 | i==(n-1)){
+      str2 += "*"
+    } else {
+      if(j==0 | j==(n-1)){
+        str2 += "*"
+      } else {
+        str2 += " "
+      }
+    }
+  }
+  str2 += "\n"
+}
+console.log(str2)
+
+// 3.Right Triangle pattern(reverse)
+let str3 = "" 
+let n3 = 6
+let pointer = 4;
+for(i=0; i<n3; i++){
+  for(j=0; j<n3; j++){
+    if(j<=pointer){
+      str3 += " "
+    } else{
+      str3 += "*"
+    }
+  }
+  pointer--;
+  str3 += "\n"
+}
+console.log(str3)
+
+// 4. Downward star pattern
+let str4 = "", n4 = 6, x=5
+for(let i=0; i<n; i++){
+  for(let j=0; j<n-i; j++){
+    str4 += "*"
+  }
+  str4+="\n"
+}
+console.log(str4)
