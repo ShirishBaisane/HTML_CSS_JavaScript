@@ -117,16 +117,71 @@ console.log(defangIPaddr(address2))
 //   console.log(titleCase("sHoRt AnD sToUt"));
 
 
-  function bouncer(arr) {
-    let resultArr = []
-    for(let i=0; i<arr.length; i++){
-      if(arr[i] != false && arr[i] != null && arr[i] != 0 && arr[i] != "" && arr[i] != undefined && arr[i] != NaN){
-        resultArr[resultArr.length] = arr[i]
+//   function bouncer(arr) {
+//     let resultArr = []
+//     for(let i=0; i<arr.length; i++){
+//       if(arr[i] != false && arr[i] != null && arr[i] != 0 && arr[i] != "" && arr[i] != undefined && arr[i] != NaN){
+//         resultArr[resultArr.length] = arr[i]
+//       }
+//     }
+  
+//     return resultArr;
+  
+//   }
+  
+//   console.log(bouncer([false, null, 0, NaN, undefined, ""]));
+
+
+function mutation(arr) {
+    let sample = arr[0]
+    // console.log(sample)
+    let target = arr[1]
+    // console.log(target)
+    for(let i=0; i<target.length; i++){
+    //   let index = searchIndex(sample, target.charAt(i))
+      let index = bSearchIndex(sample, target.charAt(i))
+    //   console.log(index)
+    //   console.log(target.charAt(i))
+      if(index == -1){
+        return false
       }
     }
-  
-    return resultArr;
-  
+    return true;
+  }
+  function searchIndex(strArr, target){
+    
+    for(let i =0; i<strArr.length; i++){
+      if(strArr.charAt(i).toUpperCase() == target.toUpperCase()){
+        return i;
+      }
+    }
+    return -1;
+  }
+
+//   Solve below for binarySearch
+  function bSearchIndex(strArr, target){
+    let sortArr = Array.from(strArr);
+    let sortStr = sortArr.sort();
+    // console.log(sortStr)
+    let start = 0
+    let end = sortStr.length-1
+    while(start<=end){
+        mid=str
+    }
+
+
+    // for(let i =0; i<strArr.length; i++){
+    //   if(strArr.charAt(i).toUpperCase() == target.toUpperCase()){
+    //     return i;
+    //   }
+    // }
+    // return -1;
   }
   
-  console.log(bouncer([false, null, 0, NaN, undefined, ""]));
+  console.log(mutation(["hello", "Hello"]));
+  console.log(mutation(["hello", "hey"]));
+  console.log(mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]));
+  console.log(mutation(["Mary", "Aarmy"]));
+  console.log(mutation(["hello", "neo"]));
+  console.log(mutation(["Tiger", "Zebra"]));
+  console.log(mutation(["Noel", "Ole"]));
