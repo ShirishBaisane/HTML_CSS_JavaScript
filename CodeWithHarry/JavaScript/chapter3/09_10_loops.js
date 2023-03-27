@@ -17,7 +17,7 @@ for(let i=1; i<=n; i++){
 }
 console.log("The sum of first "+n+" natural numbers is "+sum)
 */
-/*
+
 //for-in loop
 let obj = {
     harry: 90,
@@ -35,21 +35,21 @@ for(let a in obj){
 for(let b of "Shirish"){
     console.log(b)
 }
-*/
 
-//while loop
-let n = prompt("Enter the value of n:")
-n = Number.parseInt(n)
-let i=0
-while(i<n){
-    console.log(i)
-    i++
-}
-//do-while loop
-let n1 = prompt("Enter the value of n1:")
-n = Number.parseInt(n)
-let i1=0
-do{
-    console.log(i1)
-    i1++
-} while(i1<n1);
+
+// //while loop
+// let n = prompt("Enter the value of n:")
+// n = Number.parseInt(n)
+// let i=0
+// while(i<n){
+//     console.log(i)
+//     i++
+// }
+// //do-while loop
+// let n1 = prompt("Enter the value of n1:")
+// n = Number.parseInt(n)
+// let i1=0
+// do{
+//     console.log(i1)
+//     i1++
+// } while(i1<n1);
