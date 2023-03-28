@@ -1,0 +1,47 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <title>Project-1: Bulid a Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+      </head>
+      <body>
+        <h1 id="title">My Survey Form</h1>
+        <p id="description">This is a first project of FreeCodeCamp: Responsive Web Development course.</p>
+        <form id="survey-form" action="submit" method="post">
+          <label for="name" id="name-label">Name<input type="text" id="name" required placeholder="Enter your name"></label>
+          <label for="email" id="email-label">Email<input type="email" id="email" required placeholder="Enter your email"></label>
+          <label for="age" id="number-label">Age<input type="number" id="number" min="10" max="99" placeholder="Age"></label>
+          <label>How do you know me????
+            <select id="dropdown"> 
+              <option>Internet</option>
+              <option>School friends</option>
+              <option>Colony friends</option>
+              <option>Collage friends</option>
+              <option>Mutual friends</option>
+            </select>
+          </label>
+          <label>Do you follow me on Instagram??
+            <label><input class="bottons" type="radio" name="radio-value" value="yes"> Yes</label>
+            <label><input class="bottons" type="radio" name="radio-value" value="no"> No</label>
+          </label>
+          <label>Do your Hobbies match with mine?
+            <label><input class="bottons" type="checkbox" value="A"> Guitar</label>
+            <label><input class="bottons" type="checkbox" value="B"> Motor-Riding</label>
+            <label><input class="bottons" type="checkbox" value="C"> Reading Books</label>
+            <label><input class="bottons" type="checkbox" value="D"> PC Gaming</label>
+            <label><input class="bottons" type="checkbox" value="E"> Coding</label>
+            <label><input class="bottons" type="checkbox" value="E"> Football</label>
+            <label><input class="bottons" type="checkbox" value="E"> Travelling</label>
+          </label>
+          <label>Any comments?
+            <textarea placeholder="Please write something more about my personality......."></textarea>
+          </label>
+          
+          <input type="submit" id="submit">
+        </form>
+      </body>
+    </html>
