@@ -187,28 +187,47 @@ console.log(defangIPaddr(address2))
 //   console.log(mutation(["Noel", "Ole"]));
 
 
-function whatIsInAName(collection, source) {
-  let arr = []
-  let propArr = Object.keys(source)
-  let prop = propArr[0]
-  console.log(prop)
+// function whatIsInAName(collection, source) {
+//   let arr = []
+//   let propArr = Object.keys(source)
+//   let prop = propArr[0]
+//   console.log(prop)
   
-  // for(let obj in collection){
-  //   console.log(obj.prop)
-  //   if(obj.hasOwnProperty(prop)){
-  //     if(obj.prop == source.prop){
-  //       arr.push(obj)
-  //     }
-  //   }
-  // }
+//   // for(let obj in collection){
+//   //   console.log(obj.prop)
+//   //   if(obj.hasOwnProperty(prop)){
+//   //     if(obj.prop == source.prop){
+//   //       arr.push(obj)
+//   //     }
+//   //   }
+//   // }
 
-  for(let i=0; i<collection.length; i++){
-    console.log(collection[i].hasOwnProperty(prop))
-    console.log(collection[i][prop])
-    console.log(source[prop])
-  }
-  // console.log(arr)
-  return arr;
+//   for(let i=0; i<collection.length; i++){
+//     console.log(collection[i].hasOwnProperty(prop))
+//     console.log(collection[i][prop])
+//     console.log(source[prop])
+//   }
+//   // console.log(arr)
+//   return arr;
+// }
+
+// whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
+
+function addHashTag(str){
+    let arrStr = str.split("")
+    console.log(arrStr)
+    let hashStr = [], count=0, num = 2
+    for(let i=arrStr.length-1; i>=0; i--){
+        if(count == num){
+            hashStr.unshift("#")
+            hashStr.unshift(arrStr[i])
+            count=1
+        } else {
+            hashStr.unshift(arrStr[i])
+            count++
+        }
+    }
+    return hashStr
 }
 
-whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
+console.log(addHashTag("Shirish"))
