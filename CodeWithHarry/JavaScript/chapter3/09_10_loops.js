@@ -26,14 +26,21 @@ let obj = {
     akshay: 72,
     pratik: 49
 }
-for(let a in obj){
-    console.log(a)
-    console.log("Marks of "+a+" is "+obj[a])
-}
+// for(let a in obj){
+//     console.log(a)
+//     console.log("Marks of "+a+" is "+obj[a])
+// }
 
 //for-of loop
-for(let b of "Shirish"){
-    console.log(b)
+// for(let b of "Shirish"){
+//     console.log(b)
+// }
+
+
+// for-of loop - entries() method to get index of a iterable.
+let arr = [2,7,4,9,3,6,1,8]
+for(let [index, value] of arr.entries()){
+    console.log(index+' -> '+value)
 }
 
 

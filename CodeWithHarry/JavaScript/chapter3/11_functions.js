@@ -1,3 +1,5 @@
+greet(); //Hoisting
+
 //funtion
 
 function avg(x,y){
@@ -25,3 +27,7 @@ console.log("Average of b and c using funtion is", avg(b,c))
 console.log("Average of a and c using funtion is", avg(a,c))
 
 console.log("Sum of 523423 and 344543 is: ", sum(523423,344543))
+
+function greet(){
+    console.log("Hello programmer")
+}
